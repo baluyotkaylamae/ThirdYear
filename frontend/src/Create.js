@@ -8,7 +8,7 @@ const Create = () => {
 
     const styles = {
         width: "50%",
-        // minWidth: "400px"
+        
     }
 
     const handleSubmit = e => {
@@ -41,7 +41,6 @@ const Create = () => {
     const { title, content, user, slug } = state;
 
     const handleChange = name => event => {
-        // console.log('name', name, 'event', event.target.value);
         setState({ ...state, [name]: event.target.value });
     }
 
