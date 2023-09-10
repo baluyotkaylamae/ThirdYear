@@ -1,14 +1,12 @@
-// utilities
 import { useEffect, useState } from 'react';
 import axios from 'axios'
 
-// static
+
 import './App.css';
 
-// components
+
 import Nav from './Nav';
 import Footer from './Footer'
-// import Create from './Create';
 
 
 const App = () => {
@@ -17,7 +15,7 @@ const App = () => {
   const fetchPosts = () => {
     axios.get('http://127.0.0.1:8000/api/posts')
       .then(res => {
-        // console.log(res.data.posts);
+    
         setPosts(res.data.posts)
       })
       .catch((err) => {
@@ -40,11 +38,9 @@ const App = () => {
         })
         .catch((err) => {
           console.log(err);
-          // alert("error occured: " + err.response.data.message)
+         
         })
-      // .finally(() => {
-
-      // })
+    
     }
   }
 
