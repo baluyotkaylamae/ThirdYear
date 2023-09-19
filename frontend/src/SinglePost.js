@@ -62,7 +62,7 @@ const SinglePost = () => {
                     <CardHeader
                         avatar={
                             <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
-                                JP
+                                KM
                             </Avatar>
                         }
                         action={
